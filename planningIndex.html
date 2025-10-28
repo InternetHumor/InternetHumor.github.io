@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<!-- Project 2.1 Blank Bootstrap 5.3 starter template for DESN1021, Web & Time Based Design. <div> tags should be replaced with semantic HTML tags where appropriate  [DESN1021-Pro2#1-7bddd3e6991c22bb4d3432b663b01bd5] DO NOT DELETE THIS COMMENT-->
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- HTML title -->
+  <title>Planning D&D</title>
+
+  <!-- Bootstrap style CDN link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Google Fonts link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap icons link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="CSS/planningStyle.css">
+</head>
+
+<body>
+  <!-- Content goes here -->
+
+  <!-- Navigating the Navbar Sourced: https://getbootstrap.com/docs/5.3/components/navbar/ -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="IMG.JPEG/Favicon/favicon-32x32.png" width="30" height="30"><!-- Favicon Img here --></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Back to Top</a>
+                </li>                  
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="index.html#whoAmI" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Home Page
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html#whoAmI">Who Am I?</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="index.html#featuresAndTraits">Feats &amp; Traits</a></li>
+                        <li><a class="dropdown-item" href="index.html#workplaceSkills">Workplace Skills</a></li>
+                        <li><a class="dropdown-item" href="index.html#previousWorks">Previous Works</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="resumeIndex.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        R&eacute;sume
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="resumeIndex.html">Online R&eacute;sume</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="about.html">About Me</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="contact.html">Contacts</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button type="submit" class="dropdown-item btn" onclick="window.open('ResumeTime.pdf'); return true;">Download R&eacute;sume</button></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Planning Page
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="planningIndex.html#headerTitle">Home</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="planningIndex.html#statement">Project Statement</a></li>
+                        <li><a class="dropdown-item" href="planningIndex.html#favs">Audience</a></li>
+                        <li><a class="dropdown-item" href="planningIndex.html#inspo">Inspiration</a></li>
+                        <li><a class="dropdown-item" href="planningIndex.html#archive">Archive</a></li>
+                        <li><a class="dropdown-item" href="planningIndex.html#ani">Intro Video</a></li>
+                        <li><a class="dropdown-item" href="planningIndex.html#ideas">My ideas</a></li>
+                        <li><a class="dropdown-item" href="planningIndex.html#letsplan">Let's Plan</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Done with Nav -->
+
+
+  <!-- Scrollspy - Start  Source: https://getbootstrap.com/docs/5.3/components/scrollspy/-->
+  <div data-bs-spy="scroll" data-bs-target="#mynavbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+    tabindex="0">
+
+    <!-- header /banner starts-->
+
+    <!-- Shadow class is used to create a drop shadow  https://getbootstrap.com/docs/5.3/utilities/shadows/#examples -->
+    <header class="shadow-lg">
+      <div class="container-fluid py-5 banner">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-center display-1 text-warning banner-title" id="headerTitle">
+              Planning a Session
+            </h1>
+            <h1 class="text-center display-6 text-dark banner-text">
+              To make a D&D website, you've got to plan a D&D website
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header / banner finished -->
+
+    <!-- Intro section -->
+    <section class="py-4">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-sm-12 col-md-6">
+            <img src="IMG.JPEG/imgs-pt2/Sword.JPG" class="img-fluid rounded" alt="Portrait image of creator Isaac"  style="height: 850px">
+          </div>
+
+          <div class="col-sm-12 col-md-6">
+            <h2 id="statement">The Session</h2>
+            <p class="fs-3">
+              Finding a job now days requires differentiating oneself from the crowd,
+              so as such I'm aiming to make a profile that stands out from the
+              corporate bland. Now this approach doesn't work for all companies, but
+              in the right industry (such as a creative or developing market) imaginative
+              profiles are a goldmine. Just to be sure to keep your information precise,
+              concise, and respectful.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of Intro -->
+
+    <!-- cards start here -->
+
+    <section class="py-4 bg-warning">
+      <div class="container py-5">
+        <h4 class="fs-3 text-center mb-3" id="favs">My Audience</h4>
+        <div class="row g-4">
+          <!-- first card -->
+          <div class="col-12 col-md-4 mx-auto d-block">
+            <div class="card h-100">
+              <img src="IMG.JPEG/imgs-pt2/Matt.jpg" class="card-img-top h-100" alt="Image of D&D icon Matt Mercer">
+              <div class="card-body bg-primary">
+                <h5 class="card-title text-white">Matthew Mercer</h5>
+                <p class="card-text text-dark">
+                  An Icon of D&D, Matt is a renowned voice actor and DM of Critical Roll.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- second card -->
+          <div class="col-12 col-md-4 mx-auto d-block">
+            <div class="card h-100">
+              <img src="IMG.JPEG/imgs-pt2/Brenn.jpg" class="card-img-top h-100" alt="Image of recent D&D superstar Brennan Lee Mulligan">
+              <div class="card-body bg-success">
+                <h5 class="card-title text-warning">Brennan Lee Mulligan</h5>
+                <p class="card-text text-dark">
+                  The newest king of D&D, Brennan is a core member of Dropout TV and DM of Dimension 20.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Cards -->
+
+    <!-- Case Study Starts -->
+    <section class="py-4">
+      <div class="container py-5">
+        <h4 class="fs-3 mb-4" id="inspo">My Inspirations</h4>
+        <!-- first row -->
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <img src="IMG.JPEG/imgs-pt2/D&D Beyond.jpg" class="img-fluid" alt="An Image of the website D&D beyond">
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <h5 class="display-5 pb-3">
+              <a class="text-decoration-none" href="https://www.dndbeyond.com">dndbeyond.com</a>
+            </h5>
+            <p class="lead">
+              One of the best websites for D&D themes, the official D&D beyond online
+              character creator and manager. The website started out as a fan based
+              online supplementary tool, granting access to many of the core D&D books.
+              However, it was acquired back in 2022 by Wizards of the Coast, and is now
+              the primary online resource digital items.
+            </p>
+            <p class="lead">
+              The website is built on a dark scale background, with red highlights and
+              gold accents (left over from D&D's 50 year anniversary celebration). The
+              site is built around link, with every feature of a D&D game (such as characters
+              campaigns, magic items, monsters, dice, and so on) having it's own link
+              somewhere on the page.
+            </p>
+            <h3 class="h3">Notable Aspects</h3>
+            <!-- Accordion from Bootstrap https://getbootstrap.com/docs/5.3/components/accordion/#how-it-works -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="false" aria-controls="collapseOne">
+                    Dark colours
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    A must have of the internet, dark colours are easier on reader's eyes. D&D beyond's colour
+                    scheme evidently follows the same idea, with both the dark background, buttons, and nav bar,
+                    as well as the dimly coloured red highlights.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Interactive Images
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    The D&D beyond website likes to hid their buttons and interactive elements inside their
+                    website through images. The design is immediately intuitive for users, but still helps
+                    to combine advertising and functionality into a compact web format.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Unique Art
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Beyond the physical capabilities of the images in D&D beyond, they're also professionally
+                    made. Nothing sparks imagination like a well-made image, and nothing convinces customers to
+                    buy like a well-placed advert.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- second row -->
+        <div class="row py-4 border-top border-success">
+          <div class="col-sm-12 col-md-6">
+            <h5 class="display-5 pb-3" id="archive">
+              <a class="text-decoration-none" href="https://trekiros.com/wp-content/uploads/2023/07/space-unjammed-_-trekiros.pdf">
+                Space Unjammed</a>
+            </h5>
+            <p class="lead">
+              While not a website itself, Space Unjammed demonstrates plenty of design principles required
+              in web based design. Space Unjammed in a homebrew (fan-made) resource created with the intent
+              of improving the already existing mechanics of Spelljammer combat. Space-Unjammed is created
+              by Valentin "Trekiros" Prevost.
+            </p>
+            <p class="lead">
+              Space Unjammed follows the regular style of other homebrew resources, vertically tall with a
+              silver-gray background, filled with custom made images, smooth dark typography, and well
+              formatted content.
+            </p>
+            <h3 class="h3">Best Aspects</h3>
+            <!-- Lists from Bootstrap : https://getbootstrap.com/docs/5.3/components/list-group/#basic-example -->
+            <div class="accordion" id="accordionAgain">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    New Art
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionAgain">
+                  <div class="accordion-body">
+                    While D&D Beyond used professional artist to create their images, Space Unjammed creates
+                    it's own art on a subject by subject bases, allowing these images to more directly relate
+                    to the textual content.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Typography
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionAgain">
+                  <div class="accordion-body">
+                    Touched on earlier, the typography of Space Unjammed in smooth and dark, with black
+                    text being easy on the eyes and serifs to add a sense of professionalism to the rules
+                    provided.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Segmentation
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionAgain">
+                  <div class="accordion-body">
+                    Space Unjammed easily formats it's content into a flow like state, placing the first
+                    and foremost vital rules before the items/vehicles effected by said rules. Which this
+                    is to initially help with a reader's first experience with the resource, it also pushes
+                    the more important information closer to the start, and thus easier to refer to.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <img src="IMG.JPEG/imgs-pt2/Spelljammer Website.jpg" class="img-fluid" alt="A page from Space Unjammed">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of case study -->
+
+    <!-- Story boarding starts -->
+    <section class="py-4 bg-success">
+      <div class="container py-5 border-top border-success">
+        <div class="row">
+          <h3 class="display-5" id="ani">Intro Video Storyboard</h3>
+          <div class="col-12 col-md-8">
+            <!-- Image that triggers the Model -->
+            <img src="IMG.JPEG/imgs-pt2/Storyboard.jpg" class="img-fluid" alt="A 9 scene video storyboard"
+              data-bs-toggle="modal" data-bs-target="#imageModal" style="cursor: pointer;">
+          </div>
+          <div class="col-12 col-md-4 text-white">
+            <h4 class="h4">Details:</h4>
+            <p class="lead text-danger">
+              The storyboard runs through the rough scenes of the future video. Starting off
+              with a man (me) reading in a chair, the video explains the efforts it takes to plan,
+              run, and manage a session of D&D. From the 3rd scene onwards, this explanation continues
+              emphasizing the creative talent required for creation and improve. All the while,
+              a demonstration of this creative application is shown on screen. The video ends
+              with the book slamming shut, followed by a blackout.,
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal structure starts here -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header with Close Button -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageModalLabel">Intro Video Storyboard</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- Modal Body where the image is displayed -->
+          <div class="modal-body text-center">
+            <img src="IMG.JPEG/imgs-pt2/Storyboard.jpg" class="img-fluid" alt="A 9 scene video storyboard">
+            <!-- Caption under the image -->
+            <p class="mt-3">The storyboard for my intro animation.</p>
+          </div>
+          <!-- Modal Footer with Close Button -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of story board -->
+
+
+    <!-- Sketch starts -->
+    <section class="py-4">
+      <div class="container py-5">
+        <div class="row">
+          <h3 class="deisplay-5" id="ideas">Sitemap</h3>
+          <div class="col-12 col-md-4">
+            <h4 class="h4 pt-2 lead">The sitemap for this website is split into 3 easy sections, with a
+              consistent header and footer between each.</h4>
+            <h4 class="h4 pt-2 lead">The Home Page (made out of the index) contains 4 sections of content,
+              those being the Video and a quick About Me text, a segment on the Benefits of D&D, Applications
+              of said D&D benefits in a realistic workplace, and some careers based on D&D. 
+            </h4>
+            <h4 class="h4 pt-2 lead">The second page with a page containing my Resume, as well as a longer
+              'About Me' section, and a Contacts page. The 3rd and final page is the planning page, which is
+            actually the one you're reading right now :D</h4>
+            <h4 class="h4 pt-2 lead">The last 2 items are the header and footer. The header has a link to each
+              of the 3 core pages, whereas the footer has information on the website author and a link to
+              download the PDF of the website.
+            </h4>
+          </div>
+          <div class="col-12 col-md-8">
+            <img src="IMG.JPEG/imgs-pt2/Tree!.jpg" class="img-fluid" alt="Main page sketch">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Sketch -->
+
+    <!-- Wireframing start -->
+    <section class="py-4 custom-bg-yellow">
+      <div class="container py-5">
+        <h3 class="display-5 custom-text-red mb-3" id="letsplan">Quick Wireframes</h3>
+        <div class="row">
+          <div class="col-12 col-md-4 d-flex align-items-center">
+            <!-- images are from Google. make sure you replace the SRC link with yours -->
+            <img class="img-fluid" src="IMG.JPEG/imgs-pt2/Wireframe1.jpg"
+              alt="wireframe 1">
+          </div>
+          <div class="col-12 col-md-4 d-flex align-items-center">
+            <img class="img-fluid" src="IMG.JPEG/imgs-pt2/Wireframe2.jpg"
+              alt=" wireframe 2">
+          </div>
+          <div class="col-12 col-md-4 d-flex align-items-center">
+            <img class="img-fluid" src="IMG.JPEG/imgs-pt2/Wireframe3.jpg"
+              alt="wireframe 3">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of wireframing -->
+
+
+    <!-- Final look and feel  -->
+      <!-- I didn't do this ):-->
+    <!-- End of final look and feel -->
+
+    <!-- footer starts here-->
+
+    <footer class="pt-5">
+      <div class="container-fluid py-5 bg-dark text-white">
+        <div class="row text-center">
+          <div class="col">
+            <p class="h4">Isaac Watkins | For Web and Time Based Design | &copy;2024</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer ends here-->
+
+  </div>
+  <!-- Scrolspy - End -->
+
+  <!-- =================No Content below here========================= -->
+  <!-- Bootstrap JavaScript
+      ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <!-- End of Bootstrap script -->
+</body>
+
+</html>
+<!-- End of HTML [DESN1021-Pro2#1-7bddd3e6991c22bb4d3432b663b01bd5]-->
